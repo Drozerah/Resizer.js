@@ -39,7 +39,7 @@ class Resizer {
             handler: undefined,
             isRunning: false,
             step: 1,
-            duration: 1000 // ms
+            duration: 100 // ms
         }
     }
 
@@ -85,7 +85,24 @@ class Resizer {
 
         this._interval.isRunning = true // update isRunning boolean
         this._button.innerHTML = `Stop` // update button text
+        const min = this._input.min
+        const max = this._input.max
         this._interval.handler = setInterval(() => { // set Interval
+
+            /**
+             * increment the _input value until it reaches its max limit
+             * then decrement the value until the min limit is reached and so on
+             */
+            if ( value == max || value == min ){
+           
+                this._interval.step = -this._interval.step
+                
+            }
+
+            if (value + this._interval.step > max || value + this._interval.step < min) {
+
+                this._interval.step = -this._interval.step     
+            }
 
             value = value + this._interval.step
 
@@ -100,7 +117,6 @@ class Resizer {
         this._interval.isRunning = false // update isRunning boolean
         this._button.innerHTML = `Start` // update button text
         clearInterval(this._interval.handler) // clear Interval
-
     }
 
     init(){
@@ -108,7 +124,6 @@ class Resizer {
         this.output(this._input.value) // update _output by default
         this.inputEvent(this._input) // initialize 'input' event listener
         this.onClick(this._button)  //  initialize 'click' event listener
-        return true
     }
 }
 
