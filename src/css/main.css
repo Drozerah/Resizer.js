@@ -38,5 +38,7 @@ body #resizer div input[type="range"] {
 body #resizer div button {
   font-family: inherit;
   font-size: 18px;
+  text-align: center;
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */
