@@ -17,10 +17,10 @@ body #resizer {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  padding: 20px;
 }
 
 body #resizer div {
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
