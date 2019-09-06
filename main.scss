@@ -1,0 +1,42 @@
+
+html{
+    height: 100vh;
+}
+
+body{
+    
+    margin: 0px;
+    font-family: monospace;
+
+    header{
+
+        h1{
+            text-align: center;
+            color:#333;
+        }
+    }
+
+    #resizer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        div{
+            padding: 20px;
+
+            display: flex;
+            flex-direction: row;
+
+            input[type="range"]{
+                width: 100%;
+                margin-right: 20px;
+            }
+            button{
+                font-family: inherit;
+                font-size: 18px;
+            }
+
+        }
+    }
+}
