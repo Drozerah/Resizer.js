@@ -1,9 +1,3 @@
-(() => {
-
-    console.log('JS is loaded!')
-    // put your code below
-
-})()
 
     class Resizer {
 
@@ -35,8 +29,6 @@
         
                         this.output(value) // update _output
                     }
-
-                    // console.log(`value: ${value}`) // #DEBUG
 
                     return true
                 }
@@ -167,7 +159,3 @@
             return this
         }
     }
-
-    const resizer = new Resizer()
-    resizer.init()
-    // resizer.init().setRangeMinMax(0, 100).setRangeDefaultValue(10).setSpeed(35)

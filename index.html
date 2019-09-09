@@ -23,6 +23,23 @@
             <button>Start</button>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="resizer.js"></script>
+    <script>
+        (() => { // DOM is ready
+
+            // Instanciate resizer
+            const resizer = new Resizer()
+
+            // Initialize resizer with default values
+            // resizer.init()
+
+            // Initialize resizer and config with custom properties
+            resizer
+                .init()
+                .setRangeDefaultValue(10) // range cursor starting/default value
+                .setRangeMinMax(0, 100) // range min and max value 
+                .setSpeed(80) // risizer speed in milliseconds when 'Start' button is clicked
+        })()
+    </script>
 </body>
 </html>
