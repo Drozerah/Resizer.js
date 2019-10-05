@@ -1,4 +1,4 @@
-# Resizer
+# Resizer.js
 
 > Risize a DOM element with the attribute name of id="resizer-wrapper" with a range slider
 
