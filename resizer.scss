@@ -5,15 +5,150 @@ html{
 }
 
 body{
-    
+    height: 100%;
+    width: 100%;
     margin: 0px;
     font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    header{
+    #resizer-wrapper{
 
-        h1{
-            text-align: center;
-            color:#333;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        border: 1px solid grey;
+        padding: 50px;
+        overflow: hidden;
+
+        
+        header{
+
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            h1{
+                //text-align: center;
+                color:#333;
+            }
+        }
+    
+        main{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: stretch;
+
+            div{
+                border-radius: 2px;
+            }
+
+            div.item1{
+
+                border: 8px solid #443b68;
+
+                div{
+                    border-width: 8px;
+                    border-style: solid;                  
+                }
+
+                div{
+                  border-color: white;  
+                  div{
+                      border-color: #33488b;
+                      div{
+                        border-color: white;
+                        div{
+                            border-color: #17579e;
+                            div{
+                                border-color: white; 
+                                div{
+                                    border-color: #5d726b;
+                                    div{
+                                        border-color: white;
+                                        div{
+                                            border-color: #878935; 
+                                            div{
+                                                border-color: white;
+                                                div{
+                                                    border-color: #a59c1d;
+                                                    div{
+                                                        border-color: white;
+                                                        div{
+                                                            border-color: #c1ab0a;
+                                                            div{
+                                                                border-color: white;  
+                                                            }  
+                                                        } 
+                                                    }  
+                                                }  
+                                            } 
+                                        }  
+                                    }  
+                                } 
+                            }  
+                        }  
+                    }  
+                  }
+                }
+                
+                
+            }
+
+            div.item2{
+
+                border: 8px solid #5a3f76;
+
+                div{
+                    border-width: 8px;
+                    border-style: solid;                  
+                }
+
+                div{
+                  border-color: white;  
+                  div{
+                      border-color: #8b2e63;
+                      div{
+                        border-color: white;
+                        div{
+                            border-color: #a9232e;
+                            div{
+                                border-color: white; 
+                                div{
+                                    border-color: #b46c20;
+                                    div{
+                                        border-color: white;
+                                        div{
+                                            border-color: #c19210; 
+                                            div{
+                                                border-color: white;
+                                                div{
+                                                    border-color: #c39f13;
+                                                    div{
+                                                        border-color: white;
+                                                        div{
+                                                            border-color: #c2aa14;
+                                                            div{
+                                                                border-color: white;  
+                                                            }  
+                                                        } 
+                                                    }  
+                                                }  
+                                            } 
+                                        }  
+                                    }  
+                                } 
+                            }  
+                        }  
+                    }  
+                  }
+                }
+                
+                
+            }
+           
         }
     }
 
@@ -24,6 +159,8 @@ body{
         left: 0px;
         right: 0px;
         padding: 20px;
+        z-index: 10;
+        background-color: #fff;
 
         div{
 

@@ -3,13 +3,187 @@ html {
 }
 
 body {
+  height: 100%;
+  width: 100%;
   margin: 0px;
   font-family: monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body header h1 {
-  text-align: center;
+body #resizer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: inherit;
+  border: 1px solid grey;
+  padding: 50px;
+  overflow: hidden;
+}
+
+body #resizer-wrapper header {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #resizer-wrapper header h1 {
   color: #333;
+}
+
+body #resizer-wrapper main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+body #resizer-wrapper main div {
+  border-radius: 2px;
+}
+
+body #resizer-wrapper main div.item1 {
+  border: 8px solid #443b68;
+}
+
+body #resizer-wrapper main div.item1 div {
+  border-width: 8px;
+  border-style: solid;
+}
+
+body #resizer-wrapper main div.item1 div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div {
+  border-color: #33488b;
+}
+
+body #resizer-wrapper main div.item1 div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div div div {
+  border-color: #17579e;
+}
+
+body #resizer-wrapper main div.item1 div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div {
+  border-color: #5d726b;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div {
+  border-color: #878935;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div div div {
+  border-color: #a59c1d;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div div div div div {
+  border-color: #c1ab0a;
+}
+
+body #resizer-wrapper main div.item1 div div div div div div div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 {
+  border: 8px solid #5a3f76;
+}
+
+body #resizer-wrapper main div.item2 div {
+  border-width: 8px;
+  border-style: solid;
+}
+
+body #resizer-wrapper main div.item2 div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div {
+  border-color: #8b2e63;
+}
+
+body #resizer-wrapper main div.item2 div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div div div {
+  border-color: #a9232e;
+}
+
+body #resizer-wrapper main div.item2 div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div {
+  border-color: #b46c20;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div {
+  border-color: #c19210;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div div div {
+  border-color: #c39f13;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div div div div {
+  border-color: white;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div div div div div {
+  border-color: #c2aa14;
+}
+
+body #resizer-wrapper main div.item2 div div div div div div div div div div div div div {
+  border-color: white;
 }
 
 body #resizer-controls {
@@ -18,6 +192,8 @@ body #resizer-controls {
   left: 0px;
   right: 0px;
   padding: 20px;
+  z-index: 10;
+  background-color: #fff;
 }
 
 body #resizer-controls div {
