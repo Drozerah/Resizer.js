@@ -28,6 +28,7 @@
                         target[prop] = value // update proxy target
         
                         this.output(value) // update _output
+                        this._wrapper.style.width = `${value}%`
                     }
 
                     return true
